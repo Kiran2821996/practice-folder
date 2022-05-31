@@ -1,0 +1,199 @@
+/* >>>>>>>>>>>>>>>>>>>genral<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.div-size {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(24, 201, 192);
+    padding-top: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 5px solid rgb(12, 108, 103);
+  }
+  .div-size-hero {
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+    background-color: rgb(248, 141, 1);
+    text-align: center;
+    margin: 5px;
+    border: 5px solid red;
+  }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>header<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+h2 span {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+}
+h2 span::first-letter {
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+}
+
+.icon {
+    position: fixed;
+    right: 20px;
+    top: 500px;
+  }
+  .icon > img {
+    border-radius: 40px;
+    opacity: 0.8;
+  }
+.header {
+  background-color: rgb(32, 177, 169);
+  
+}
+.header-container {
+  padding: 10px;
+  margin-left: 150px;
+}
+.header-l {
+  color: white;
+}
+.header-c-nav > a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: rgb(134, 90, 124);
+}
+.header-c-nav > a:hover {
+  color: white;
+  border-bottom: 5px solid rgb(134, 90, 124);
+}
+.header-r > button {
+  margin-right: 20px;
+  /* padding: 10px; */
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.header-r > button:hover {
+  cursor: pointer;
+
+  border: 2px solid rgb(134, 90, 124);
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>.section-1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.section-1 {
+  height: 500px;
+  background-color: rgb(231, 231, 231);
+}
+.section-1-t {
+  text-align: center;
+  padding: 20px;
+}
+.div1,
+.div2,
+.div3 {
+  padding: 10px;
+  width: 30%;
+  height: 310px;
+  border: 2px solid red;
+  text-align: -webkit-center;
+}
+.section-1-b .div2-c {
+  float: left;
+}
+.section-1-b .div3-c {
+  float: right;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>.section-2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.section-2-t {
+  text-align: center;
+  padding: 20px;
+}
+.div4 {
+  padding: 10px;
+  width: 30%;
+  height: 310px;
+  border: 2px solid red;
+  text-align: -webkit-center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: 34%;
+  margin-bottom: 5%;
+}
+.section-2-b .div2-c {
+  position: relative;
+  top: 10%;
+  left: 10%;
+}
+.section-2-b .div3-c {
+  position: absolute;
+  right: 19%;
+}
+
+.fix {
+  position: sticky;
+  top: 4px;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>.section-2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.section-3 {
+  background-color: rgb(231, 231, 231);
+}
+.section-3-t {
+  padding: 30px;
+  text-align: center;
+}
+.items-u {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.items-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+.item-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+.item-l > .item1 {
+  flex: 1;
+}
+.item-l > .item2 {
+  flex: 1;
+}
+.item-l > .item3 {
+  flex: 2;
+}
+.item-l > .item4 {
+  flex: 1;
+}
+.item-l > .item5 {
+  flex: 1;
+}
+.item-s {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>Footer<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+footer a {
+  text-decoration: none;
+
+  color: white;
+  padding-right: 25px;
+  margin-top: 3%;
+}
+.footer {
+  text-align: center;
+  height: 80px;
+
+  margin-top: 3%;
+  background-color: rgb(32, 177, 169);
+}

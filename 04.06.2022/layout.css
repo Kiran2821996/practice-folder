@@ -1,0 +1,40 @@
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 100px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+.item2,
+.item3,
+.item6 {
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+.item2,
+.item1,
+.item6 img {
+  width: 100px;
+  height: 200px;
+}
+
+.item5,
+.item8 {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+.item5,
+.item8 img {
+  width: 200px;
+  height: 100px;
+}
+.item3,
+.item4,
+.item7,
+.item9,
+.item10 img {
+  width: 300px;
+  height: 100px;
+}

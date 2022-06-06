@@ -1,4 +1,4 @@
-.container {
+.containerh {
   display: grid;
   grid-template-columns: repeat(20,100px);
   grid-template-rows: 100px 1fr;
@@ -7,7 +7,7 @@
   background-color: rgb(18, 25, 33);
   color: white;
 }
-/* .containerb{
+/* .containerbh{
   background-color: rgb(34,47,63);
 } */
 .input{
@@ -29,12 +29,12 @@ a{
   text-decoration: none;
   color: white;
 }
-.item1 {
+.place1 {
   display: grid;
   justify-content: center;
   grid-column: 1/span 2;
 }
-.item2{
+.place2{
  
   grid-column: 3/span 2;
   margin-right: 150px;
@@ -43,7 +43,7 @@ a{
   
 }
 
-.item3 {
+.place3 {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
@@ -51,19 +51,19 @@ a{
   
 }
 
-.item3 input{
+.place3 input{
   height: 33px;
   width: 815px;
   border: none;
 }
-.item3 i{
+.place3 i{
   font-size: 20px;
   padding: 8px;
   
   background-color: rgb(226, 178, 19);
   border-radius: 0 5px 5px 0;
 }
-.item3 select{
+.place3 select{
   font-size: 15px;
   
   padding:5px 0;
@@ -72,72 +72,49 @@ a{
   border-radius: 5px 0 0 5px;
 
 }
-/* .item4 {
-  background-color: rgb(218, 211, 23);
-  grid-column: 7/span 2;
-}
-.item5 {
-  background-color: rgb(102, 224, 20);
-  grid-column: 9/span 2;
-} */
-.item6 {
+
+.place6 {
   
   grid-column: 11/span 2;
 }
-.item7 {
+.place7 {
   display: grid;
   justify-content: right;
   grid-column: 14/span 1;
 }
-.item8 {
+.place8 {
   display: grid;
   justify-content: right;
   grid-column: 15/span 2;
   margin-left: 100px;
 }
-.item9 {
+.place9 {
   display: grid;
   justify-content: center;
   grid-column: 17/span 2;
 }
-.item10 {
+.place10 {
   display: grid;
   justify-content: center;
   grid-column: 19/span 2;
 }
-.item11 {
+.place11 {
   display: grid;
   justify-content: center;
   grid-auto-flow: column;
   
+  
 }
-/* .item111{
-  background-color: rgb(34,47,63);
-}
-.item12 {
-  background-color: rgb(34,47,63);
-}
-.item13 {
-  background-color: rgb(34,47,63);
-}
-.item14 {
-  background-color: rgb(34,47,63);
-}
-.item15 {
-  background-color: rgb(34,47,63);
-}
-.item16 {
-  background-color: rgb(34,47,63);
-} */
-.item17 {
+
+.place17 {
   /* background-color: rgb(34,47,63); */
   grid-column: 7/span 9;
 }
-.item18 {
+.place18 {
   /* background-color: rgb(34,47,63); */
   grid-column: 12/span 4 ;
 }
-.item19 {
+.place19 {
   /* background-color: rgb(34,47,63); */
   display: grid;
   justify-content: right;

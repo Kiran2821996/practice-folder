@@ -1,4 +1,4 @@
  <h1>Output</h1>
-  <img src="./images/Screenshot (104).png" alt="">
-  <img src="./images/Screenshot (105).png" alt="">
-  <img src="./images/Screenshot (106).png" alt="">
+  <img src="./images/Screenshot (146).png" alt="">
+  <img src="./images/Screenshot (147).png" alt="">
+  <img src="./images/Screenshot (148).png" alt="">

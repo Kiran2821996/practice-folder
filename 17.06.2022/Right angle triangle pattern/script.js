@@ -1,3 +1,4 @@
+
 // printing star in righ angle triangle
 let rowr = 10;
 for (let i = 1; i <= rowr; i++) {

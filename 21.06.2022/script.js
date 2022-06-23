@@ -128,41 +128,41 @@
 //   console.log(calculate)
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<question2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-// let class= (fuction students(a,b){
-//     let nextTerm=0;
-//     for (let i = 0; i <= 7; i++) {
+let classy = (function students(a,b){
+    let nextTerm=0;
+    for (let i = 0; i <= 7; i++) {
 
-//         nextTerm = a + b;
-//         a = b;
-//         b = nextTerm;
-//     }
-//       return nextTerm;
-//     })(20,30)
+        nextTerm = a + b;
+        a = b;
+        b = nextTerm;
+    }
+      return nextTerm;
+    })(20,30)
 
-//     console.log(class)
+    console.log(classy)
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<question3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// let convert=(fuction amPm(hr, min) {
-//   if (hr == 0) {
-//     min = min < 10 ? "0" + min : min;
-//     hr = hr < 10 ? "0" + hr : hr;
-//     return "12:" + min + " AM";
-//   } else if (hr >= 12) {
-//     hr = hr - 12;
-//     min = min < 10 ? "0" + min : min;
-//     hr = hr < 10 ? "0" + hr : hr;
-//     if (hr == 0) {
-//       return "12:" + min + " PM";
-//     } else {
-//       return hr + ":" + min + " PM";
-//     }
-//   } else {
-//     min = min < 10 ? "0" + min : min;
-//     hr = hr < 10 ? "0" + hr : hr;
-//     return hr + ":" + min + " AM";
-//     }
+function amPm(hr, min) {
+  if (hr == 0) {
+    min = min < 10 ? "0" + min : min;
+    hr = hr < 10 ? "0" + hr : hr;
+    return "12:" + min + " AM";
+  } else if (hr >= 12) {
+    hr = hr - 12;
+    min = min < 10 ? "0" + min : min;
+    hr = hr < 10 ? "0" + hr : hr;
+    if (hr == 0) {
+      return "12:" + min + " PM";
+    } else {
+      return hr + ":" + min + " PM";
+    }
+  } else {
+    min = min < 10 ? "0" + min : min;
+    hr = hr < 10 ? "0" + hr : hr;
+    return hr + ":" + min + " AM";
+    }
 
-// })(17,6)
-// console.log(convert);
+}
+console.log(amPm(15,06));
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<question4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 // let result = (function eligible(

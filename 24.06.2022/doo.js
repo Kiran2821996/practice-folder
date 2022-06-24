@@ -1,13 +1,13 @@
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Print factorial of a number using recursion.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//function fact(num,facto){
+function fact(num,facto){
 
-//      while(num>0){
-//         facto=facto*num;
-//         return fact((num-1),facto)
-//      }
-//      return facto
-// }
-// console.log(fact(12,1))
+     while(num>0){
+        facto=facto*num;
+        return fact((num-1),facto)
+     }
+     return facto
+}
+console.log(fact(12,1))
 
 
 
@@ -36,14 +36,14 @@
 
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Print ‘n’ numbers of Fibonacci series using recursion.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// function fibo(first,second,counter){
-//    if(counter<10){
-//       var c= first+second;
-//       return fibo(second,c,counter+1);
-//    }
-//    console.log(first);
-// }
-// fibo(1,1,1)
+function fibo(first,second,counter){
+   if(counter<10){
+      var c= first+second;
+      return fibo(second,c,counter+1);
+   }
+   console.log(first);
+}
+fibo(1,1,1)
 
 
 
@@ -58,29 +58,29 @@
 
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Given a number n, print all the even numbers from 1 to n using recursion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
-// function Even(L, R)
-// {
+function Even(L, R)
+{
 
-//     if (R < L)
-//     {
-//         return;
-//     }
+    if (R < L)
+    {
+        return;
+    }
 
-//     if (R % 2 == 0 )
-//     {
-//         Even(L, R - 2);
-//     }
-//     else
-//     {
-//         Even(L, R - 1);
-//     }
+    if (R % 2 == 0 )
+    {
+        Even(L, R - 2);
+    }
+    else
+    {
+        Even(L, R - 1);
+    }
 
-//     if (R % 2 == 0)
-//     {
-//         console.log(R + " ");
-//     }
-// }
-// Even(11,21)
+    if (R % 2 == 0)
+    {
+        console.log(R + " ");
+    }
+}
+Even(11,21)
 
 
 
@@ -137,10 +137,10 @@
 
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Given a number n, find 2^n using recursion.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// function pow(x,n){
-//    if(n==0)
-//    return 1
-//    else
-//    return x*pow(x,n-1)
-// }
-// console.log(pow(2,4))
+function pow(x,n){
+   if(n==0)
+   return 1
+   else
+   return x*pow(x,n-1)
+}
+console.log(pow(2,4))

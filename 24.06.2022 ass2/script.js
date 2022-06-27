@@ -20,13 +20,13 @@
 //     if(a>b){
 //         return
 //     }
-//     if(b%2==0){
-//         even(a,b-2)
+//     if(a%2==0){
+//         even(a+2,b)
 //     }else{
-//         even(a,b-1)
+//         even(a+1,b)
 //     }
-//     if(b%2==0){
-//         console.log(b)
+//     if(a%2==0){
+//         console.log(a)
 //     }
 // }even(101,115)
 
@@ -54,59 +54,58 @@
 //  fibo(1,1,1)
 
 //Print sum of all the numbers in the given range.
-// let s=0
-// function sum(n1,n2){
-//     if(n1<=n2){
-//         s+=n1
-//         return sum(n1+1,n2)
-//     }else{
-//         return s
-//     }
+
+// function sum(n1,n2,s=0){
+//    if(n1<=n2){
+//     return sum(n1,n2-1,s+n2)
+//    }
+// return s
 // }
 // console.log(sum(1,5))
 
 //Print product of all the numbers in the given range.
-// let p=1
-// function sum(n1,n2){
-//     if(n1<=n2){
-//         p*=n1
-//         return sum(n1+1,n2)
-//     }else{
-//         return p
-//     }
+
+// function sum(n1,n2,s=1){
+    // console.log(n1,"n1",n2,"n2",s,"s","outside1")
+   // if(n1<=n2){
+    // s=s+n2
+    // n2=n2-1
+    // console.log(n1,"n1",n2,"n2",s,"s","inside")
+//    console.log(n1,"n1",n2,"n2",s,"s","outside2")
+//    return s
 // }
 // console.log(sum(1,5))
  
 //Write the recursive function to check whether a given number is prime or not
-// function isPrime(n, i)
-// {
-//     if (n <= 2)
-//         return (n == 2) ? true : false;
-//     if (n % i == 0)
-//         return false;
-//     if (i * i > n)
-//         return true;
-    
-//     return isPrime(n, i + 1);
+// function checkIfPrime(num,temp=2){
+//     if(temp<num ){
+//         if(num%temp == 0){
+//             return "Not a Prime number";
+//         }else{
+//             return checkIfPrime(num,temp+1);
+//         }
+//     }else {
+//         return "Prime Number";
+//     }
 // }
-
-// if (isPrime(2, 2))
-// console.log("Yes");
-// else
-// console.log("No");
+// let ret = checkIfPrime(5);
+// console.log(ret);
 
 
 // Print sum of all the first 10 even numbers.
 
-// function recursiveEvenSum (num, sum = 0){
+// function sum(num){
    
-//     num = num % 2 === 0 ? num : num - 1;
-//     if(num){
-//        return recursiveEvenSum(num - 2, sum+num);
+//     if(num==0){
+//        return 0
+//     }else if(num%2!==0){
+//         return num+sum(num-1)
+//     }else{
+//         return num+sum(num-2)
 //     }
-//     return sum;
 //  };
-//  console.log(recursiveEvenSum(10))
+//  console.log(sum(11))
+
 
 // Write a recursive program to find the power of given number and exponent. (without using Math.pow and exponent operator(**)).
 // function pow(x,n){

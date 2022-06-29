@@ -1,8 +1,8 @@
-<h1>QUSTION 1</h1>
-<img src="./Screenshot (215).png" alt="">
-<h1>QUSTION 2</h1>
-<img src="./Screenshot (216).png" alt="">
-<h1>QUSTION 3</h1>
-<img src="./Screenshot (217).png" alt="">
-<h1>QUSTION 4</h1>
-<img src="./Screenshot (218).png" alt="">
+<h1>QUESION 1</h1>
+<img src="./images/Screenshot (215).png" alt="">
+<h1>QUESION 2</h1>
+<img src="./images/Screenshot (216).png" alt="">
+<h1>QUESION 3</h1>
+<img src="./images/Screenshot (217).png" alt="">
+<h1>QUESION 4</h1>
+<img src="./images/Screenshot (218).png" alt="">

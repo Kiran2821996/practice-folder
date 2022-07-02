@@ -118,13 +118,10 @@
 // }
 
 
-let p1=1
-  for(let i=1;i<=10;i++){
-    if(i%5==0 && i%3==0){
-      p1=p1*i
-      console.log(p1) 
-    }  
-   
+for(let i=1;i<=4;i++){
+  for(let j=1;j<=4;j++){
+  console.log("*")
   }
+}
 
 

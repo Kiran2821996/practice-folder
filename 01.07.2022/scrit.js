@@ -18,6 +18,15 @@
 // }
 // setTimeout(firstAction,5000)
 // secondAction()
+
+// for(let i=1;i<=5;i++){
+   
+//     function getLoop(){
+//         console.log(i);
+//     }
+// }
+// setTimeout(getLoop,2000)
+
 //<<<<<<<<<<<<<<<<<<<<<<<<<<< step 3: introduced second callback function  in firstAction()>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // function firstAction(){
 //     console.log("This is first action")
@@ -49,3 +58,13 @@
 
 
 /// result "This is first action" is consoled after 5secs and "This is second action" is consoled after 2sec+5sec=7sec
+
+function getNum(n,fact=1){
+    if(n<=0){
+        return
+    }
+    console.log(n);
+    return getNum(n-1)
+
+}
+getNum(10)

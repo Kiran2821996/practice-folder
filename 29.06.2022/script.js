@@ -71,5 +71,57 @@
 //   }
 //   console.log(stars)
 // }
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>q5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+let num=3;
+for(let i=1;i<=num;i++){
+    star=""
+    for(var j=1;j<=num-i;j++){
+        star+=" "
+    }
+    for(var k=1;k<=i;k++)
+    {
+        if(i==1){
+            star+=k
+        }else if(i==2){
+            star+=k+1
+        }else{
+            star+=k+2 
+        }
+        
+    }
+    for(let k=2;k<=i;k++)
+    {
+        if(i==3&&k==2){
+            star+=k*2
+
+        }else{
+             star+=k
+        }
+       
+    }
+    console.log(star)
+}
+num=2;
+for(let i=num;i>=1;i--){
+    star=" "
+    for(var j=1;j<=num-i;j++){
+        star+=" "
+    }
+    for(var k=1;k<=i;k++)
+    {
+        if(i==1){
+            star+=k
+        }else if(i==2){
+            star+=k+1
+        }else{
+            star+=k+2 
+        }
+        
+    }
+    for(let k=2;k<=i;k++)
+    {
+        star+=k
+    }
+    console.log(star)
+}

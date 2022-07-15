@@ -24,10 +24,10 @@
 // }
 // console.log(arr1.join(" "))
 //Anagram
-let wrd1="aircampus"
-let wrd2="supmacria"
-if(wrd1.split("").sort().join("")==wrd2.split("").sort().join("")){
-    console.log("ANAGRAM")
-}else{
-    console.log("NOT AN ANAGRAM")
-}
+// let wrd1="aircampus"
+// let wrd2="supmacria"
+// if(wrd1.split("").sort().join("")==wrd2.split("").sort().join("")){
+//     console.log("ANAGRAM")
+// }else{
+//     console.log("NOT AN ANAGRAM")
+// }

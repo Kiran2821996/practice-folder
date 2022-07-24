@@ -4,3 +4,5 @@
 <img src="./images/Screenshot (39).png" alt="">
 <h1>REDUCE</h1>
 <img src="./images/Screenshot (41).png" alt="">
+<h1>FILTER</h1>
+<img src="./images/Screenshot (42).png" alt="">

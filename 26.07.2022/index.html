@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="MyButton">Tutorial</button>
+    <div style="display: none; background-color: bisque">
+      <ul style="list-style: none">
+        <li>data Structure</li>
+        <li>algorithm</li>
+        <li>linked list</li>
+        <li>sorting</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    let button = document.querySelector(".MyButton");
+    let div = document.querySelector("div");
+    button.addEventListener("click", MyFunction);
+    function MyFunction() {
+      if (div.style.display == "none") {
+        document.querySelector(".MyButton").innerHTML = "njoy our courses";
+        div.style.display = "block";
+      } else {
+        document.querySelector(".MyButton").innerHTML = "you clicked";
+        div.style.display = "none";
+      }
+    }
+  </script>
+</html>

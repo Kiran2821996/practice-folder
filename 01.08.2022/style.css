@@ -1,0 +1,34 @@
+
+.p2{
+color:yellow ;
+}
+.p3{
+color: violet;
+}
+.p4{
+color: brown;
+}
+.p5{
+color: orange;
+}
+
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.pink{
+    color: pink;
+}
+.blue{
+    color: blue;
+}
+.black{
+    color: black;
+}
+.div,h1{
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: italic;
+}

@@ -14,9 +14,11 @@ function validateForm() {
     setTimeout(() => (document.querySelector(".alert1").innerText = " "), 2000);
   }
 }
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<foradding rows>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const form = document.querySelector("form");
+form.addEventListener("submit", validateForm);
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<for adding rows>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 const tbody = document.querySelector("tbody");
 function onAddDetails(event) {
   event.preventDefault();
@@ -28,7 +30,7 @@ function onAddDetails(event) {
    <td>${name}</td>
    <td>${emailId}</td>
    <td>${phoneNumber}</td>
-   <td> <input type="submit" class="deleteBtn" id="button1" value="Remove"></td>
+   <td> <input type="button" class="deleteBtn" id="button1" value="Remove" onclick="deleteRow()"></td>
    
 </tr> 
 `;
@@ -42,14 +44,9 @@ form.addEventListener("submit", onAddDetails);
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<for deleting the rows>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-const table = document.querySelector("table");
-function deleteRow(e) {
-  if (!e.target.classList.contains("deleteBtn")) {
-    return;
-  }
+function deleteRow() {
+  document.querySelector(".deleteBtn").closest("tr").remove();
 
-  const btn = e.target;
-  btn.closest("tr").remove();
   document.querySelector(".alert2").innerText = "Item deleted successfully";
   document.querySelector(".alert2").style.color = "red";
   document.querySelector(".alert2").style.fontSize = "20px";
@@ -59,4 +56,3 @@ function deleteRow(e) {
 
   setTimeout(() => (document.querySelector(".alert2").innerText = ""), 2000);
 }
-table.addEventListener("click", deleteRow);

@@ -30,7 +30,7 @@ function onAddDetails(event) {
    <td>${name}</td>
    <td>${emailId}</td>
    <td>${phoneNumber}</td>
-   <td> <input type="button" class="deleteBtn" id="button1" value="Remove" onclick="deleteRow()"></td>
+   <td> <button class="deleteBtn">REMOVE</button></td>
    
 </tr> 
 `;
@@ -43,9 +43,15 @@ function onAddDetails(event) {
 form.addEventListener("submit", onAddDetails);
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<for deleting the rows>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const tableEl = document.querySelector("table");
+function deleteRow(e) {
+  if (!e.target.classList.contains("deleteBtn")) {
+    return;
+  }
 
-function deleteRow() {
-  document.querySelector(".deleteBtn").closest("tr").remove();
+  const btn = e.target;
+  btn.closest("tr").remove();
+//  e.target.document.querySelector(".deleteBtn").closest("tr").remove();
 
   document.querySelector(".alert2").innerText = "Item deleted successfully";
   document.querySelector(".alert2").style.color = "red";
@@ -56,3 +62,4 @@ function deleteRow() {
 
   setTimeout(() => (document.querySelector(".alert2").innerText = ""), 2000);
 }
+tableEl.addEventListener("click", deleteRow);

@@ -1,6 +1,6 @@
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<for validation>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function validateForm() {
-  var x = document.forms["myForm"]["name"].value;
+  var x = document.forms["myForm"]["name"]
   var y = document.forms["myForm"]["emailId"].value;
   var z = document.forms["myForm"]["phone"].value;
   if (x == "" || y == "" || z == "") {

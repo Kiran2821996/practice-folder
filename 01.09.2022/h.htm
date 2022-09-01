@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/6d08c22a70.js" crossorigin="anonymous"></script>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  transition: 2s;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  transition: 2s;
+}
+div{
+  width: 200px;
+  height: 200px;
+  background-image: url(./images\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s;
+}
+.dark{
+  width: 200px;
+  height: 200px;
+  background-image: url(./360_F_278717315_KtaKn0mC0lQ16j20iheyMMrPBOWOQKCa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s;
+}
+</style>
+</head>
+<body>
+  <div onclick="myFunction()"></div>
+<h2>Toggle Dark/Light Mode</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error itaque dolorum illo commodi aut ipsum at totam est ipsam harum! Illum nostrum porro officiis dicta quos exercitationem explicabo odio nisi corporis minus? Nemo nisi porro excepturi amet ipsum ducimus incidunt ratione, dolore molestiae eos nam repellendus voluptas velit? Ea, nesciunt reprehenderit a vitae numquam autem cum, maxime sint deserunt, dolorem dolorum cupiditate quidem. Tempore, sint cum doloremque id esse obcaecati fuga aut ducimus modi odio voluptate. Dolor, voluptatibus! Sit quas reiciendis unde, minima velit maxime, enim non quo, placeat ad quam quod molestias magni fugiat aspernatur optio earum cupiditate id!</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error itaque dolorum illo commodi aut ipsum at totam est ipsam harum! Illum nostrum porro officiis dicta quos exercitationem explicabo odio nisi corporis minus? Nemo nisi porro excepturi amet ipsum ducimus incidunt ratione, dolore molestiae eos nam repellendus voluptas velit? Ea, nesciunt reprehenderit a vitae numquam autem cum, maxime sint deserunt, dolorem dolorum cupiditate quidem. Tempore, sint cum doloremque id esse obcaecati fuga aut ducimus modi odio voluptate. Dolor, voluptatibus! Sit quas reiciendis unde, minima velit maxime, enim non quo, placeat ad quam quod molestias magni fugiat aspernatur optio earum cupiditate id!</p>
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   let toog = document.querySelector("div")
+   element.classList.toggle("dark-mode");
+   toog.classList.toggle("dark")
+}
+</script>
+
+</body>
+</html>
